@@ -58,7 +58,6 @@ void drawPerson(int x, int y, int i) {
   int pHeight = (int) (PERSON_HEIGHT * RESCALE);
   int xi =  (i % 4) * pWidth;
   int yi =  (i / 4) * pHeight;
-  clip(x, y, pWidth, pHeight);
-  image(sky, x - xi, y - yi);
-  noClip();
+  PImage person = sky.get(xi, yi, pWidth, pHeight);
+  image(person, x, y);
 }
