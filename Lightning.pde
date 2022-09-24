@@ -2,7 +2,7 @@ PImage sky;
 int i = 0;
 PFont f;
 
-float RESCALE = 1.5;
+float RESCALE = 1;
 int PERSON_WIDTH = 150;
 int PERSON_HEIGHT = 150;
 
